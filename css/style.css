@@ -97,3 +97,18 @@ body {
   max-width: 300px;
   text-align: center;
 }
+
+
+/* About */
+.about-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 10px;
+}
