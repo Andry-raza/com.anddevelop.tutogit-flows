@@ -20,3 +20,13 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+// Binea - Intégration finale
+window.addEventListener('load', () => {
+    document.querySelectorAll('section').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease-out';
+    });
+  });
