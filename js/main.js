@@ -30,3 +30,4 @@ window.addEventListener('load', () => {
       el.style.transition = 'all 0.6s ease-out';
     });
   });
+  

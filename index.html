@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>InspiraTech - Agence Web</title>
+  <title>InspiraTech Valley - Agence Web</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <!-- Andry - Navbar -->
   <header id="navbar">
     <nav class="navbar">
-      <div class="logo">TechNova</div>
+      <div class="logo">
+        <i class="fas fa-lightbulb"></i> InspiraTech Valley
+      </div>
       <ul class="nav-links">
-        <li><a href="#hero">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#hero"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#about"><i class="fas fa-users"></i> Qui sommes-nous</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Nos services</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Nous contacter</a></li>
       </ul>
-      <div class="burger">
+      <div class="nav-actions">
+        <a href="#settings" title="Paramètres"><i class="fas fa-gear"></i></a>
+      </div>
+      <div class="burger" id="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -28,9 +35,9 @@
   <!-- Tahiana - Hero Section -->
   <section id="hero">
     <div class="hero-content">
-      <h1>Construisons ensemble votre succès digital</h1>
-      <p>Explorez des solutions innovantes pour faire évoluer vos projets en ligne.</p>
-      <a href="#contact" class="btn">Commencez maintenant</a>
+      <h1>Votre réussite digitale commence ici</h1>
+      <p>Nous concevons des solutions sur mesure pour propulser votre activité en ligne.</p>
+      <a href="#contact" class="btn">Prenez rendez-vous</a>
     </div>
   </section>
 
@@ -39,54 +46,122 @@
     <h2>Nos Services</h2>
     <div class="service-cards">
       <div class="card">
-        <h3>Conception Web</h3>
-        <p>Des sites modernes, réactifs et adaptés à vos besoins.</p>
+        <img src="images/site-sur-mesure.jpg" alt="Création de sites sur mesure">
+        <h3>Création de sites sur mesure</h3>
+        <p>Un design moderne, fluide et pensé pour répondre aux attentes de vos utilisateurs.</p>
       </div>
       <div class="card">
-        <h3>SEO & Marketing</h3>
-        <p>Optimisez votre présence sur le web et touchez plus de clients.</p>
+        <img src="images/strategie-digitale.jpg" alt="Stratégie digitale">
+        <h3>Visibilité & Stratégie digitale</h3>
+        <p>Améliorez votre position sur Google et attirez les bonnes personnes, au bon moment.</p>
       </div>
       <div class="card">
-        <h3>Maintenance</h3>
-        <p>Nous assurons la fiabilité et l'évolution continue de votre site.</p>
+        <img src="images/suivi-accompagnement.jpg" alt="Suivi et accompagnement">
+        <h3>Suivi et accompagnement</h3>
+        <p>Votre site évolue avec vous : on veille sur lui et on reste à vos côtés.</p>
       </div>
     </div>
   </section>
 
   <!-- Aina - À propos -->
-  <section id="about">
+  <section id="about"> 
     <div class="about-content">
       <img src="images/team.jpg" alt="Notre équipe">
       <div>
-        <h2>À propos de nous</h2>
-        <p>Nous sommes une équipe passionnée, dédiée à offrir des solutions digitales créatives et efficaces.</p>
+        <h2>Qui sommes-nous ?</h2>
+        <p>Une équipe engagée à vos côtés pour concevoir des solutions numériques sur mesure, performantes et inspirées.</p>
+  
+        <div class="contact-info">
+          <p><i class="fas fa-phone-alt"></i> 034 17 332 48</p>
+          <p><i class="fas fa-map-marker-alt"></i> E045/3702 Ambalapaiso Est</p>
+          <p><i class="fas fa-city"></i> Ambalapaiso, Fianarantsoa</p>
+          <p><i class="fas fa-globe-africa"></i> Madagascar</p>
+        </div>
       </div>
     </div>
-  </section>
+  </section>  
 
   <!-- Arena - Témoignages -->
   <section id="testimonials">
-    <h2>Ce que disent nos clients</h2>
+    <h2>Ce sont nos clients qui en parlent le mieux</h2>
     <div class="testimonial-slider">
-      <blockquote>"InspiraTech a transformé notre vision digitale en réalité !" - Julie R.</blockquote>
-      <blockquote>"Un accompagnement sur mesure et des résultats visibles." - Karim M.</blockquote>
+
+      <div class="testimonial-card">
+        <img src="images/julie.jpg" alt="Julie R.">
+        <blockquote>"InspiraTech a transformé notre vision digitale en réalité !"</blockquote>
+        <p class="client-name">Julie R.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/karim.jpg" alt="Karim M.">
+        <blockquote>"Un accompagnement sur mesure et des résultats visibles."</blockquote>
+        <p class="client-name">Karim M.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/nathalie.jpg" alt="Nathalie G.">
+        <blockquote>"Grâce à eux, notre site est enfin à la hauteur de notre image."</blockquote>
+        <p class="client-name">Nathalie G.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/marc.png" alt="Marc T.">
+        <blockquote>"Une équipe réactive, créative et toujours à l’écoute."</blockquote>
+        <p class="client-name">Marc T.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/damien.jpg" alt="Damien C.">
+        <blockquote>"Leur expertise en SEO a boosté notre visibilité en quelques semaines."</blockquote>
+        <p class="client-name">Damien C.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/claire.jpg" alt="Damien C.">
+        <blockquote>"Des conseils clairs, un suivi pro, et surtout des résultats !"</blockquote>
+        <p class="client-name"> Claire F.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/thomas.jpg" alt="Damien C.">
+        <blockquote>"On sent qu’ils aiment ce qu’ils font, et ça change tout."</blockquote>
+        <p class="client-name">Thomas B.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/lucie.jpg" alt="Damien C.">
+        <blockquote>"Ils ont su comprendre notre univers et le sublimer en ligne."</blockquote>
+        <p class="client-name">Lucie V.</p>
+      </div>
+
     </div>
   </section>
+  
 
   <!-- Erlys - Contact -->
   <section id="contact">
     <h2>Contactez-nous</h2>
-    <form>
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
+    <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Votre nom" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Votre email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit">Envoyer</button>
+      </div>
     </form>
   </section>
+  
+  
 
   <!-- Andraina - Footer -->
   <footer id="footer">
-    <p>&copy; 2025 InspiraTech. Tous droits réservés.</p>
+    <p>&copy; 2025 InspiraTech — Tous droits réservés.</p>
   </footer>
 
   <script src="js/main.js"></script>
