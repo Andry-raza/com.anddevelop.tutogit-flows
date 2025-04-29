@@ -112,3 +112,13 @@ body {
   width: 300px;
   border-radius: 10px;
 }
+
+
+/* Testimonials */
+#testimonials blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  background: #eee;
+  padding: 1rem;
+  border-left: 5px solid #007BFF;
+}
