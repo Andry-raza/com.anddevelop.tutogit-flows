@@ -155,3 +155,34 @@ footer {
   background: #111;
   color: white;
 }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  #services .service-cards {
+    flex-direction: column;
+  }
+}
