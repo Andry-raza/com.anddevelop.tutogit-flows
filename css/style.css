@@ -79,3 +79,21 @@ body {
   color: white;
   border-radius: 5px;
 }
+
+
+/* Services */
+#services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+}
